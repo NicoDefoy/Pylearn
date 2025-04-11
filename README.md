@@ -1,63 +1,99 @@
+# 🐍 Python Learning App
 
-# PyLearn - Application d'apprentissage Python
+Une application web pour apprendre Python de façon progressive, interactive et fun !  
+Développée avec ❤️ en React (frontend) et Flask (backend).
 
-Une application locale pour apprendre Python avec un éditeur de code intégré et un suivi de progression.
+---
 
-## Fonctionnalités
+## 🗂️ Structure de l’app
 
-- Éditeur de code Python avec coloration syntaxique
-- Exercices progressifs
-- Retour immédiat sur le code
+```
+h-9928-main/
+│
+├── server.py              # Backend Flask : exécution & vérification du code
+├── exercises/             # Dossier contenant tous les fichiers d’exercices
+│   ├── __init__.py
+│   ├── variables.py
+│   ├── functions.py
+│   ├── conditions.py
+│   ├── loops.py
+│   ├── strings.py
+│   ├── lists.py
+│   ├── dictionaries.py
+│   ├── sets_tuples.py
+│   ├── pandas_basics.py
+│   ├── numpy_basics.py
+│   ├── scikit_learn.py
+│   ├── env_imports.py
+│   └── classes.py
+│
+├── src/                   # Frontend React (TypeScript + Vite)
+│   ├── components/
+│   │   ├── App.tsx
+│   │   ├── Header.tsx
+│   │   ├── Home.tsx
+│   │   ├── ExerciseList.tsx
+│   │   ├── ThemeExercises.tsx
+│   │   ├── Exercise.tsx
+│   │   ├── CodeEditor.tsx
+│   │   └── ProgressTracker.tsx
+│   └── ...
+└── README.md              # Ce fichier
+```
+
+---
+
+## 🧠 Contenu pédagogique
+
+Chaque **fichier `.py` dans le dossier `exercises/`** correspond à un **thème**.  
+Chaque thème contient :
+- 📘 **Définitions claires** (niveau 0)
+- 🧪 **Exemples interactifs**
+- 🧩 **Exercices progressifs** (niveau 1 à 5)
+- 🧠 **Bonus pour les plus chauds**
+
+---
+
+## 🚀 Lancer le projet localement
+
+### 1. Lancer le backend (Flask)
+```bash
+python3 server.py
+```
+
+### 2. Lancer le frontend (React + Vite)
+```bash
+npm install
+npm run dev
+```
+
+### 📍 Accès à l’application :
+> http://localhost:8080
+
+---
+
+## ✨ Fonctionnalités
+
+- Interface propre et responsive
+- Exécution du code Python en temps réel
+- Feedback interactif ✅ 🟡 ❌
 - Suivi de progression
-- Sauvegarde locale des exercices et solutions
+- Thèmes clairs et bien séparés
 
-## Installation
+---
 
-1. Clonez ce dépôt
-2. Installez les dépendances frontend:
-   ```
-   npm install
-   ```
-3. Installez les dépendances Python:
-   ```
-   pip install flask
-   ```
+## 📦 Tech stack
 
-## Démarrage
+- 🧠 Python 3 + Flask
+- ⚛️ React + TypeScript + Vite
+- 🎨 Tailwind CSS + shadcn/ui
+- 🧪 CodeMirror (ou Monaco) pour l'éditeur de code
 
-1. Construisez l'application React:
-   ```
-   npm run build
-   ```
-2. Démarrez le serveur Flask:
-   ```
-   python server.py
-   ```
-3. Accédez à l'application dans votre navigateur:
-   ```
-   http://localhost:5000
-   ```
+---
 
-## Développement
+## 🙌 Projet perso en cours de perfectionnement
 
-Pour le développement, vous pouvez exécuter:
+Conçu pour s’auto-former efficacement à Python et passer en 3e année avec les bases bien solides 💪  
+> Tu veux contribuer, m’encourager ou poser une question ? N'hésite pas !
 
-1. Serveur de développement React:
-   ```
-   npm run dev
-   ```
-2. Serveur Flask:
-   ```
-   python server.py
-   ```
-
-## Stockage local
-
-L'application utilise localStorage pour sauvegarder:
-- Les exercices et leur état (terminé ou non)
-- Le code des solutions
-- La progression globale
-
-## Personnalisation
-
-Vous pouvez ajouter de nouveaux exercices en modifiant le tableau `defaultExercises` dans le composant `ExerciseList.tsx`.
+---
