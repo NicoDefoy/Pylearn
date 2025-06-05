@@ -1,0 +1,211 @@
+exercises = [
+  {
+    "id": "loop_intro",
+    "title": "📘 Introduction aux boucles",
+    "instruction": "Une boucle permet de répéter un bloc de code.\nExemple :\n\nfor i in range(3):\n    print(i)",
+    "initial_code": "for i in range(3):\n    print(i)",
+    "expected_output": "0\n1\n2",
+    "level": 0,
+    "theme": "loops",
+    "hint": "Lis bien l'exemple et observe la structure d'une boucle for.",
+    "solution_code": "for i in range(3):\n    print(i)"
+  },
+  {
+    "id": "loop_1",
+    "title": "Afficher une série de nombres",
+    "instruction": "Utilise une boucle pour afficher les nombres de 1 à 3.",
+    "initial_code": "# Boucle ici",
+    "expected_output": "1\n2\n3",
+    "level": 1,
+    "theme": "loops",
+    "hint": "Utilise range(1, 4) pour aller de 1 à 3 inclus.",
+    "solution_code": "for i in range(1, 4):\n    print(i)"
+  },
+  {
+    "id": "loop_2",
+    "title": "Répéter une phrase",
+    "instruction": "Affiche 'Salut' 4 fois avec une boucle.",
+    "initial_code": "# Répète 'Salut'",
+    "expected_output": "Salut\nSalut\nSalut\nSalut",
+    "level": 1,
+    "theme": "loops",
+    "hint": "Utilise une boucle for et la fonction range(4).",
+    "solution_code": "for i in range(4):\n    print('Salut')"
+  },
+  {
+    "id": "loop_3",
+    "title": "Boucle avec range personnalisé",
+    "instruction": "Affiche les nombres de 5 à 7 inclus.",
+    "initial_code": "# range(?, ?)",
+    "expected_output": "5\n6\n7",
+    "level": 1,
+    "theme": "loops",
+    "hint": "Utilise range(5, 8) pour aller de 5 à 7 inclus.",
+    "solution_code": "for i in range(5, 8):\n    print(i)"
+  },
+  {
+    "id": "loop_list_example",
+    "title": "📘 Exemple : Boucler sur une liste",
+    "instruction": "Tu peux boucler sur une liste d'éléments.\nExemple :\n\nfruits = ['pomme', 'banane']\nfor fruit in fruits:\n    print(fruit)",
+    "initial_code": "fruits = ['pomme', 'banane']\nfor fruit in fruits:\n    print(fruit)",
+    "expected_output": "pomme\nbanane",
+    "level": 2,
+    "theme": "loops",
+    "hint": "Lis bien l'exemple et observe la syntaxe de la boucle sur une liste.",
+    "solution_code": "fruits = ['pomme', 'banane']\nfor fruit in fruits:\n    print(fruit)"
+  },
+  {
+    "id": "loop_4",
+    "title": "Afficher les animaux",
+    "instruction": "Boucle sur la liste ['chat', 'chien'] et affiche chaque mot.",
+    "initial_code": "# Boucle sur la liste",
+    "expected_output": "chat\nchien",
+    "level": 2,
+    "theme": "loops",
+    "hint": "Utilise une boucle for sur la liste ['chat', 'chien'].",
+    "solution_code": "animaux = ['chat', 'chien']\nfor animal in animaux:\n    print(animal)"
+  },
+  {
+    "id": "loop_5",
+    "title": "Lister des prénoms",
+    "instruction": "Boucle sur ['Léo', 'Emma'] et affiche-les.",
+    "initial_code": "# Boucle ici",
+    "expected_output": "Léo\nEmma",
+    "level": 2,
+    "theme": "loops",
+    "hint": "Boucle sur la liste ['Léo', 'Emma'] et affiche chaque prénom.",
+    "solution_code": "prenoms = ['Léo', 'Emma']\nfor prenom in prenoms:\n    print(prenom)"
+  },
+  {
+    "id": "loop_6",
+    "title": "Liste de couleurs",
+    "instruction": "Boucle sur ['rouge', 'bleu', 'vert'] et affiche chaque couleur.",
+    "initial_code": "# Liste à parcourir",
+    "expected_output": "rouge\nbleu\nvert",
+    "level": 2,
+    "theme": "loops",
+    "hint": "Boucle sur la liste ['rouge', 'bleu', 'vert'] et affiche chaque couleur.",
+    "solution_code": "couleurs = ['rouge', 'bleu', 'vert']\nfor couleur in couleurs:\n    print(couleur)"
+  },
+  {
+    "id": "loop_sum_example",
+    "title": "📘 Exemple : Somme d'une liste",
+    "instruction": "On peut additionner les éléments d'une liste avec une boucle.\n\nnombres = [1, 2, 3]\ntotal = 0\nfor n in nombres:\n    total += n\nprint(total)",
+    "initial_code": "nombres = [1, 2, 3]\ntotal = 0\nfor n in nombres:\n    total += n\nprint(total)",
+    "expected_output": "6",
+    "level": 3,
+    "theme": "loops",
+    "hint": "Lis bien l'exemple et observe comment on additionne les éléments d'une liste.",
+    "solution_code": "nombres = [1, 2, 3]\ntotal = 0\nfor n in nombres:\n    total += n\nprint(total)"
+  },
+  {
+    "id": "loop_7",
+    "title": "Somme de 3 nombres",
+    "instruction": "Additionne tous les nombres dans [4, 5, 6] et affiche le total.",
+    "initial_code": "# Code ici",
+    "expected_output": "15",
+    "level": 3,
+    "theme": "loops",
+    "hint": "Utilise une boucle for pour additionner les éléments de la liste.",
+    "solution_code": "nombres = [4, 5, 6]\ntotal = 0\nfor n in nombres:\n    total += n\nprint(total)"
+  },
+  {
+    "id": "loop_8",
+    "title": "Produit d'une liste",
+    "instruction": "Multiplie tous les nombres dans [2, 3, 4] et affiche le résultat.",
+    "initial_code": "# Produit total",
+    "expected_output": "24",
+    "level": 3,
+    "theme": "loops",
+    "hint": "Initialise une variable à 1 et multiplie chaque élément de la liste.",
+    "solution_code": "nombres = [2, 3, 4]\nproduit = 1\nfor n in nombres:\n    produit *= n\nprint(produit)"
+  },
+  {
+    "id": "loop_9",
+    "title": "Compter des voyelles",
+    "instruction": "Compte combien de lettres dans ['a', 'e', 'i', 'o'] sont des voyelles.",
+    "initial_code": "# Test voyelles",
+    "expected_output": "4",
+    "level": 3,
+    "theme": "loops",
+    "hint": "Parcours la liste et compte chaque élément qui est une voyelle.",
+    "solution_code": "lettres = ['a', 'e', 'i', 'o']\ncompte = 0\nfor l in lettres:\n    if l in 'aeiou':\n        compte += 1\nprint(compte)"
+  },
+  {
+    "id": "loop_nested_example",
+    "title": "📘 Exemple : Boucle imbriquée",
+    "instruction": "On peut mettre une boucle dans une autre :\n\nfor i in range(2):\n    for j in range(2):\n        print(i, j)",
+    "initial_code": "for i in range(2):\n    for j in range(2):\n        print(i, j)",
+    "expected_output": "0 0\n0 1\n1 0\n1 1",
+    "level": 4,
+    "theme": "loops",
+    "hint": "Lis bien l'exemple et observe la structure d'une boucle imbriquée.",
+    "solution_code": "for i in range(2):\n    for j in range(2):\n        print(i, j)"
+  },
+  {
+    "id": "loop_10",
+    "title": "Créer une grille",
+    "instruction": "Utilise 2 boucles pour afficher :\n*\n**\n***",
+    "initial_code": "# Grille avec for",
+    "expected_output": "*\n**\n***",
+    "level": 4,
+    "theme": "loops",
+    "hint": "Utilise une boucle for imbriquée pour afficher chaque ligne.",
+    "solution_code": "for i in range(1, 4):\n    print('*' * i)"
+  },
+  {
+    "id": "loop_11",
+    "title": "Triangle numérique",
+    "instruction": "Affiche :\n1\n12\n123",
+    "initial_code": "# Triangle croissant",
+    "expected_output": "1\n12\n123",
+    "level": 4,
+    "theme": "loops",
+    "hint": "Utilise une boucle for et la fonction str pour concaténer les chiffres.",
+    "solution_code": "for i in range(1, 4):\n    ligne = ''\n    for j in range(1, i+1):\n        ligne += str(j)\n    print(ligne)"
+  },
+  {
+    "id": "loop_12",
+    "title": "Grille 2x2",
+    "instruction": "Affiche :\na a\na a",
+    "initial_code": "# 2 lignes, 2 colonnes",
+    "expected_output": "a a\na a",
+    "level": 4,
+    "theme": "loops",
+    "hint": "Utilise deux boucles for pour afficher chaque ligne.",
+    "solution_code": "for i in range(2):\n    print('a a')"
+  },
+  {
+    "id": "loop_bonus_1",
+    "title": "✅ BONUS : Afficher les carrés",
+    "instruction": "Affiche les carrés des nombres de 1 à 3 : 1, 4, 9",
+    "initial_code": "# Carrés de i",
+    "expected_output": "1\n4\n9",
+    "level": 5,
+    "theme": "loops",
+    "hint": "Utilise une boucle for et la fonction **2 pour le carré.",
+    "solution_code": "for i in range(1, 4):\n    print(i**2)"
+  },
+  {
+    "id": "loop_bonus_2",
+    "title": "✅ BONUS : Mot inversé",
+    "instruction": "Avec une boucle, affiche les lettres de 'salut' en ordre inverse.",
+    "initial_code": "# Reverser une string",
+    "expected_output": "t\nu\nl\na\ns",
+    "level": 5,
+    "theme": "loops",
+    "hint": "Utilise range(len(mot)-1, -1, -1) pour parcourir à l'envers.",
+    "solution_code": "mot = 'salut'\nfor i in range(len(mot)-1, -1, -1):\n    print(mot[i])"
+  },
+  {
+    "id": "loop_bonus_3",
+    "title": "✅ BONUS : Liste à l'envers",
+    "instruction": "Affiche les éléments de [1,2,3] à l'envers : 3,2,1",
+    "initial_code": "# Reverse loop",
+    "expected_output": "3\n2\n1",
+    "level": 5,
+    "theme": "loops",
+    "hint": "Utilise reversed() ou un range décroissant.",
+    "solution_code": "for i in [3,2,1]:\n    print(i)"
+  }
+]

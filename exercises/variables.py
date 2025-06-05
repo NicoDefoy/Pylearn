@@ -1,0 +1,211 @@
+exercises = [
+  {
+    "id": "var_intro",
+    "title": "📘 Introduction aux variables",
+    "instruction": "Une variable stocke une valeur. Exemple :\n\nx = 5\nprint(x)",
+    "initial_code": "x = 5\nprint(x)",
+    "expected_output": "5",
+    "level": 0,
+    "theme": "variables",
+    "hint": "Lis bien l'exemple et observe comment on déclare et affiche une variable.",
+    "solution_code": "x = 5\nprint(x)"
+  },
+  {
+    "id": "var_1",
+    "title": "Déclarer une variable",
+    "instruction": "Crée une variable nommée age contenant la valeur 25 et affiche-la.",
+    "initial_code": "# Déclare ta variable ici",
+    "expected_output": "25",
+    "level": 1,
+    "theme": "variables",
+    "hint": "Déclare la variable puis utilise print().",
+    "solution_code": "age = 25\nprint(age)"
+  },
+  {
+    "id": "var_2",
+    "title": "Variable texte",
+    "instruction": "Crée une variable nommée prenom avec la valeur 'Alice'. Affiche-la.",
+    "initial_code": "# Ta variable prénom",
+    "expected_output": "Alice",
+    "level": 1,
+    "theme": "variables",
+    "hint": "Déclare la variable avec des guillemets et utilise print().",
+    "solution_code": "prenom = 'Alice'\nprint(prenom)"
+  },
+  {
+    "id": "var_3",
+    "title": "Opération sur variable",
+    "instruction": "Déclare x = 10 et y = 2, puis affiche leur somme.",
+    "initial_code": "# Somme de x et y",
+    "expected_output": "12",
+    "level": 1,
+    "theme": "variables",
+    "hint": "Déclare deux variables puis additionne-les dans print().",
+    "solution_code": "x = 10\ny = 2\nprint(x + y)"
+  },
+  {
+    "id": "var_type_example",
+    "title": "📘 Exemple : Type de variable",
+    "instruction": "On peut connaître le type d'une variable avec type() :\n\nval = 'test'\nprint(type(val))",
+    "initial_code": "val = 'test'\nprint(type(val))",
+    "expected_output": "<class 'str'>",
+    "level": 2,
+    "theme": "variables",
+    "hint": "Lis bien l'exemple et observe l'utilisation de type().",
+    "solution_code": "val = 'test'\nprint(type(val))"
+  },
+  {
+    "id": "var_4",
+    "title": "Afficher le type",
+    "instruction": "Crée une variable a = 7. Affiche son type.",
+    "initial_code": "# type() ici",
+    "expected_output": "<class 'int'>",
+    "level": 2,
+    "theme": "variables",
+    "hint": "Utilise type() sur la variable a.",
+    "solution_code": "a = 7\nprint(type(a))"
+  },
+  {
+    "id": "var_5",
+    "title": "Type d'une décimale",
+    "instruction": "Déclare une variable pi = 3.14 et affiche son type.",
+    "initial_code": "# type() de pi",
+    "expected_output": "<class 'float'>",
+    "level": 2,
+    "theme": "variables",
+    "hint": "Déclare pi puis utilise type().",
+    "solution_code": "pi = 3.14\nprint(type(pi))"
+  },
+  {
+    "id": "var_6",
+    "title": "Changer de valeur",
+    "instruction": "Déclare une variable status = 'début'. Change sa valeur en 'fin' et affiche-la.",
+    "initial_code": "# Changer la valeur",
+    "expected_output": "fin",
+    "level": 2,
+    "theme": "variables",
+    "hint": "Affecte une nouvelle valeur à la variable puis affiche-la.",
+    "solution_code": "status = 'début'\nstatus = 'fin'\nprint(status)"
+  },
+  {
+    "id": "var_concat_example",
+    "title": "📘 Exemple : Concaténer du texte",
+    "instruction": "On peut combiner des chaînes avec + :\n\nnom = 'Bob'\nprint('Bonjour ' + nom)",
+    "initial_code": "nom = 'Bob'\nprint('Bonjour ' + nom)",
+    "expected_output": "Bonjour Bob",
+    "level": 3,
+    "theme": "variables",
+    "hint": "Lis bien l'exemple et observe la concaténation.",
+    "solution_code": "nom = 'Bob'\nprint('Bonjour ' + nom)"
+  },
+  {
+    "id": "var_7",
+    "title": "Créer une phrase",
+    "instruction": "Crée une variable nom = 'Léo' et affiche 'Salut Léo' grâce à la concaténation.",
+    "initial_code": "# Concatène ici",
+    "expected_output": "Salut Léo",
+    "level": 3,
+    "theme": "variables",
+    "hint": "Utilise + pour concaténer les chaînes.",
+    "solution_code": "nom = 'Léo'\nprint('Salut ' + nom)"
+  },
+  {
+    "id": "var_8",
+    "title": "Concaténer avec âge",
+    "instruction": "Crée les variables nom = 'Nico' et age = 20. Affiche 'Nico a 20 ans'.",
+    "initial_code": "# Concatène nom et âge",
+    "expected_output": "Nico a 20 ans",
+    "level": 3,
+    "theme": "variables",
+    "hint": "Utilise une f-string ou la concaténation avec str().",
+    "solution_code": "nom = 'Nico'\nage = 20\nprint(f'{nom} a {age} ans')"
+  },
+  {
+    "id": "var_9",
+    "title": "Phrase complète",
+    "instruction": "nom = 'Emma', ville = 'Paris'. Affiche : Emma habite à Paris.",
+    "initial_code": "# Affiche la phrase",
+    "expected_output": "Emma habite à Paris",
+    "level": 3,
+    "theme": "variables",
+    "hint": "Utilise une f-string pour insérer les variables dans la phrase.",
+    "solution_code": "nom = 'Emma'\nville = 'Paris'\nprint(f'{nom} habite à {ville}')"
+  },
+  {
+    "id": "var_input_example",
+    "title": "📘 Exemple : Entrée utilisateur",
+    "instruction": "On peut demander à l'utilisateur de taper une valeur avec input().\n\nnom = input('Ton nom ? ')\nprint('Salut ' + nom)",
+    "initial_code": "nom = input('Ton nom ? ')\nprint('Salut ' + nom)",
+    "expected_output": "",
+    "level": 4,
+    "theme": "variables",
+    "hint": "Lis bien l'exemple et observe l'utilisation de input().",
+    "solution_code": "nom = input('Ton nom ? ')\nprint('Salut ' + nom)"
+  },
+  {
+    "id": "var_10",
+    "title": "Demander un prénom",
+    "instruction": "Demande à l'utilisateur son prénom et affiche : Bonjour prénom",
+    "initial_code": "# input ici",
+    "expected_output": "",
+    "level": 4,
+    "theme": "variables",
+    "hint": "Utilise input() pour demander le prénom, puis affiche avec print().",
+    "solution_code": "prenom = input('Quel est ton prénom ? ')\nprint('Bonjour ' + prenom)"
+  },
+  {
+    "id": "var_11",
+    "title": "Calculer à partir d'une entrée",
+    "instruction": "Demande un nombre avec input, convertis-le en int, puis affiche son double.",
+    "initial_code": "# Conversion et calcul",
+    "expected_output": "",
+    "level": 4,
+    "theme": "variables",
+    "hint": "Utilise int() pour convertir l'entrée, puis multiplie par 2.",
+    "solution_code": "x = int(input('Donne un nombre : '))\nprint(x * 2)"
+  },
+  {
+    "id": "var_12",
+    "title": "Concat avec input",
+    "instruction": "Demande nom et ville avec input, affiche 'nom vient de ville'",
+    "initial_code": "# input nom + ville",
+    "expected_output": "",
+    "level": 4,
+    "theme": "variables",
+    "hint": "Demande deux entrées puis affiche-les dans une phrase.",
+    "solution_code": "nom = input('Nom : ')\nville = input('Ville : ')\nprint(f'{nom} vient de {ville}')"
+  },
+  {
+    "id": "var_bonus_1",
+    "title": "✅ BONUS : Échanger 2 variables",
+    "instruction": "Soit a = 3 et b = 5. Échange les valeurs et affiche-les.",
+    "initial_code": "# Swap a et b",
+    "expected_output": "5\n3",
+    "level": 5,
+    "theme": "variables",
+    "hint": "Utilise l'affectation multiple pour échanger les valeurs.",
+    "solution_code": "a = 3\nb = 5\na, b = b, a\nprint(a)\nprint(b)"
+  },
+  {
+    "id": "var_bonus_2",
+    "title": "✅ BONUS : Incrémentation",
+    "instruction": "x = 2, puis ajoute 1 deux fois et affiche x.",
+    "initial_code": "# Incrémente x",
+    "expected_output": "4",
+    "level": 5,
+    "theme": "variables",
+    "hint": "Utilise += pour incrémenter la variable.",
+    "solution_code": "x = 2\nx += 1\nx += 1\nprint(x)"
+  },
+  {
+    "id": "var_bonus_3",
+    "title": "✅ BONUS : Combiner int + string",
+    "instruction": "x = 5, affiche : Le résultat est 5",
+    "initial_code": "# str(x)",
+    "expected_output": "Le résultat est 5",
+    "level": 5,
+    "theme": "variables",
+    "hint": "Utilise str() pour convertir x en texte.",
+    "solution_code": "x = 5\nprint('Le résultat est ' + str(x))"
+  }
+]

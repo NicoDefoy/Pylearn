@@ -1,0 +1,43 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --radius: 0.5rem;
+  }
+
+  body {
+    @apply bg-dark-400 text-neutral-100 antialiased;
+    font-feature-settings: "ss01" on, "ss02" on, "cv01" on, "cv03" on;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-dark-300/80 backdrop-blur-lg border border-dark-100 shadow-lg;
+  }
+  
+  .container-padding {
+    @apply px-6 md:px-8 lg:px-12;
+  }
+
+  .editor-container {
+    @apply w-full h-[60vh] rounded-lg overflow-hidden border border-dark-100;
+  }
+
+  .exercise-card {
+    @apply bg-dark-300 p-4 rounded-lg border border-dark-100 hover:border-primary/50 transition-all;
+  }
+
+  .code-output {
+    @apply bg-dark-500 text-neutral-200 p-4 rounded-lg font-mono text-sm mt-4 border border-dark-100;
+  }
+}
+
+.text-balance {
+  text-wrap: balance;
+}
